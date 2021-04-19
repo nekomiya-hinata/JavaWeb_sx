@@ -4,7 +4,6 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-<!--    添加修改标记-->
     <groupId>moe.kuro</groupId>
     <artifactId>day01_maven_01</artifactId>
     <version>1.0-SNAPSHOT</version>
@@ -14,4 +13,5 @@
         <maven.compiler.target>14</maven.compiler.target>
     </properties>
 
+    <!--    这是一个maven项目，使用maven管理依赖管理-->
 </project>
