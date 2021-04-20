@@ -7,6 +7,9 @@
     <groupId>moe.kuro</groupId>
     <artifactId>parent_version_manger</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <modules>
+        <module>../day01_javaweb_01</module>
+    </modules>
 
     <!--    创建父工程，定义jar包版本
             了解 maven  pom文件的常用节点-->
