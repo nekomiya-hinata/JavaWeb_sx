@@ -11,16 +11,26 @@ public class UserDao {
     PreparedStatement pstmt = null;
     ResultSet rs = null;
 
+    //加载驱动  一次   构造代码块  静态构造代码块   构造方法。。
+    static {
+        //使用反射机制加载驱动
+        try {
+            Class.forName("com.mysql.jdbc.Driver");
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+            System.out.println("找不到驱动，加载驱动失败");
+        }
+    }
+
     public void getConnection() {
         String url = "jdbc:mysql://localhost:3306/javaweb?serverTimezone=Asia/Shanghai";
         String name = "root";
         String password = "YYH-mysql1";
         try {
-            Class.forName("com.mysql.cj.jdbc.Driver");
             long l = System.currentTimeMillis();
             conn = DriverManager.getConnection(url, name, password);
             System.out.println("获取连接耗时：" + (System.currentTimeMillis() - l) + "mm");
-        } catch (ClassNotFoundException | SQLException e) {
+        } catch (SQLException e) {
             e.printStackTrace();
         }
     }
