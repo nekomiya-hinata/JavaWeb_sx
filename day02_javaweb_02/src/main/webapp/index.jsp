@@ -40,5 +40,8 @@
     </table>
 </form>
 
+<a href="<c:url value="/send?method=qqzf"/>">请求转发</a>
+<a href="<c:url value="/send?method=cdx"/>">重定向</a><br/>
+<a href="<c:url value="/send"/>">计数页面</a>
 </body>
 </html>
