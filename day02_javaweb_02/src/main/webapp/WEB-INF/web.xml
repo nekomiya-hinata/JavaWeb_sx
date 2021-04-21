@@ -9,9 +9,18 @@
         <servlet-name>UserHttpServlet</servlet-name>
         <servlet-class>moe.kuro.web.UserHttpServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>SendDataHttpServlet</servlet-name>
+        <servlet-class>moe.kuro.web.SendDataHttpServlet</servlet-class>
+    </servlet>
+
     <servlet-mapping>
         <servlet-name>UserHttpServlet</servlet-name>
         <url-pattern>/user</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>SendDataHttpServlet</servlet-name>
+        <url-pattern>/send</url-pattern>
     </servlet-mapping>
 
     <welcome-file-list>
