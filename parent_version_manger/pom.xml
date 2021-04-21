@@ -10,6 +10,8 @@
     <modules>
         <module>../day01_javaweb_01</module>
         <module>../day02_javaweb_02</module>
+        <module>../day02_javaweb_homework</module>
+        <module>../day03_javaweb_03</module>
     </modules>
 
     <!--    创建父工程，定义jar包版本
